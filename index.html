@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/formStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk-icon lucide-asterisk"><path d="M12 6v12"/><path d="M17.196 9 6.804 15"/><path d="m6.804 9 10.392 6"/></svg>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>fullstack</h1>
+            <div class="test">
+                <h1>developer</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum mollitia necessitatibus at porro repellat magni, illum itaque sit earum ratione nostrum libero non exercitationem aliquid, animi similique placeat maxime voluptatibus ducimus voluptas voluptate ex sapiente. Aliquid nulla architecto laboriosam. Consequatur doloribus dolores quod atque nam architecto minus eius exercitationem.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h1></h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informations de contact</legend>
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" placeholder="First Name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" placeholder="Last Name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Adresse e-mail :</label>
+                        <input type="email" id="email" name="email" required 
+                        aria-describedby="emailHelp emailError"
+                        placeholder="exemple@domaine.com">
+                        
+                        <div aria-live="polite" id="liveFeedback"></div>
+                    </div>
+                    <!-- <span id="emailHelp">Format attendu : name@domain.com</span>
+                    <span id="emailError"class="error">Invalid email adress</span> -->
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <div class="input-group">
+                        <label for="messageSubject">Subject</label>
+                        <input id="messageSubject" type="text" placeholder="ex: First Contact">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend></legend>
+                    <!-- facultative data -->
+                </fieldset>
+                <input type="submit" name="submitBtn" value="Submit"/>
+            </form>
+
+<!-- 1. Champs obligatoires
+        Votre formulaire doit obligatoirement collecter les données :
+        - Nom complet
+        - Adresse e-mail
+        - Sujet du message
+        - Message (zone de texte multiline)
+    2. Données facultatives
+        - Préférence de contact (email ou téléphone) => radio?
+        - Téléphone (si l’option téléphone est choisie)
+        - Consentement newsletter (checkbox)
+    3. Accessibilité (obligatoire)
+        - Chaque champ doit avoir un <label> clair.
+        - Les placeholders complètent l’info, sans remplacer les labels.
+        - Si un champ est vide ou invalide → afficher un message d’erreur lié via aria-describedby.
+    4. Style
+        - Utilisez Flexbox pour un layout propre
+        - Ajoutez des couleurs et espacements accessibles
+        - Astuce accessibilité :
+        Assurez-vous que le contraste des couleurs respecte WCAG (ex. : texte sombre surfond clair, etc). Testez avec des outils comme WAVE -->
+        
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
