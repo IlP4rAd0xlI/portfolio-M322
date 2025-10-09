@@ -71,6 +71,12 @@ body {
     overflow-x: hidden;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* ========================================
    UTILITY CLASSES
    ======================================== */
@@ -233,12 +239,6 @@ textarea.form-control {
 .form-check-label {
     color: var(--pure-black);
     font-weight: var(--font-weight-semibold);
-}
-
-/*Dropdown*/
-.country-code-select {
-    max-width: 140px;
-    font-weight: 600;
 }
 
 /* Form validation */
@@ -627,6 +627,8 @@ legend {
 
 .country-code-select {
     max-width: 120px;
+    background-color: var(--dark-bg);
+    color: var(--pure-white);
 }
 
 /* ========================================
